@@ -53,7 +53,7 @@ class AdvertisingIdPlugin() : FlutterPlugin, ActivityAware, MethodCallHandler {
     }
 
     override fun onDetachedFromActivity() {
-        TODO("Not yet implemented")
+        activity = null
     }
 
     private fun getAndroidId(a: Activity): AndroidIdResult {
